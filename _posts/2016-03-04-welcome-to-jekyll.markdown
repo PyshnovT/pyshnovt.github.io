@@ -1,25 +1,11 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-03-04 14:09:26 +0300
-categories: jekyll update
+title:  "Кому нужен этот сайт?"
+date:   2016-03-05 00:40:26 +0300
+permalink: about/
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Как минимум, мне. Здесь я практикуюсь в написании текстов, которые не скучно читать. Если же вдруг вам понравится, что я пишу, тогда, выходит, этот сайт нужен и вам. 
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Тут нет ссылок на шэринг в соц. сетях, нет комментариев, нет всего, что отвлекает от чтения. Я даже не прикрутил сюда статистику. Всё, что здесь есть — это буквы в правильном порядке. Я не получаю никакого фидбека. Однако, если вам реально понравится пост, ничего не помешает скопировать ссылку и поделиться ею с друзьями. 
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+На вопрос, почему не писать сразу в ВК, отвечаю: это не формат соц. сети. Здесь я могу отключить внутреннего цензора и писать то, что действительно думаю, не опасаясь, что кто-то вырубит меня из своей ленты. А писать я буду много. Так что stay tuned и добавляйте сайт в закладки!
