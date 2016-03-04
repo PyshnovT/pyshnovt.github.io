@@ -8,23 +8,43 @@ a:hover {
 	border-bottom: none;
 }
 
+p, a {
+	font-size: 18px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .container {
 	margin-left: 40px;
 	margin-top: 80px;
-	width: 600px;
+	max-width: 640px;
+	width: 80%;
 }
 
 .home h1 {
-	font-family: Helvetica;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 30px;
 	color: #111111;
 }
 
 .home .links {
-	margin-top: 60px;
+	margin-top: 20px;
 }
 
 .home .info-block {
-	background-color: red;
 	margin-bottom: 80px;
 }
+
+.home ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.home .links li {
+	display: inline-block;
+}
+
+.home .links li a {
+	font-size: 16px;
+}
+

@@ -6,7 +6,7 @@ layout: default
 
   <div class="info-block">
     <h1>Кто я такой?</h1>
-    <p>Тимофей пишет мобильное приложение для <a href="http://rocketbank.ru">Рокетбанка</a>, не учится в школе и изучает мир.</p>
+    <p>Тимофей делает мобильное приложение для <a href="http://rocketbank.ru">Рокетбанка</a>, не учится в школе и изучает мир.</p>
     <ul class="links">
       <li><a href="https://vk.com/lightwight">ВК</a></li>
       <li><a href="https://www.facebook.com/tpyshnov">FB</a></li>
@@ -15,16 +15,14 @@ layout: default
   </div>
 
   <div class="info-block">
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Что я пишу?</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </h3>
       </li>
     {% endfor %}
   </ul>
