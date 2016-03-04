@@ -1,0 +1,30 @@
+a {
+	color: #ffa600;
+	text-decoration: none;
+	border-bottom: 1px solid #ffa600;
+}
+
+a:hover {
+	border-bottom: none;
+}
+
+.container {
+	margin-left: 40px;
+	margin-top: 80px;
+	width: 600px;
+}
+
+.home h1 {
+	font-family: Helvetica;
+	font-size: 30px;
+	color: #111111;
+}
+
+.home .links {
+	margin-top: 60px;
+}
+
+.home .info-block {
+	background-color: red;
+	margin-bottom: 80px;
+}

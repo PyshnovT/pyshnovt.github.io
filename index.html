@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="info-block">
+    <h1>Кто я такой?</h1>
+    <p>Тимофей пишет мобильное приложение для <a href="http://rocketbank.ru">Рокетбанка</a>, не учится в школе и изучает мир.</p>
+    <ul class="links">
+      <li><a href="https://vk.com/lightwight">ВК</a></li>
+      <li><a href="https://www.facebook.com/tpyshnov">FB</a></li>
+      <li><a href="https://www.instagram.com/merelyoneguy/">Instagram</a></li>
+    </ul>
+  </div>
+
+  <div class="info-block">
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+  </div>
+
+</div>
