@@ -13,17 +13,17 @@ p, a {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: #111111;
+}
+
 .container {
 	margin-left: 40px;
 	margin-top: 80px;
 	max-width: 640px;
 	width: 80%;
-}
-
-.home h1 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 30px;
-	color: #111111;
 }
 
 .home .links {
@@ -48,3 +48,6 @@ p, a {
 	font-size: 16px;
 }
 
+.post-link {
+	font-weight: normal;
+}
