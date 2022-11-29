@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Тимоха
-email: lightwight99@gmail.com
+title: Tim Pyshnov
+email: pyshnovdev@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Говорят, это описание использует гугл в поисковых запросах. Ну ладно, пусть использует и дальше.
+  A driven iOS developer. Love making beautiful apps and designing clear APIs.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://pyshnovt.github.io" # the base hostname & protocol for your site
 
