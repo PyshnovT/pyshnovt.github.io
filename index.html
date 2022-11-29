@@ -2,28 +2,10 @@
 layout: default
 ---
 
-<div class="home">
-
-  <div class="info-block">
-    <h1>Кто я такой?</h1>
-    <p>Делаю мобильное приложение для <a href="http://rocketbank.ru">Рокетбанка</a>, не учусь в школе и изучаю мир. Так случилось, что мне 16 лет. У всех есть свои недостатки, да.</p>
-    <ul class="links">
-      <li><a href="https://vk.com/lightwight">ВК</a></li>
-      <li><a href="https://www.facebook.com/tpyshnov">FB</a></li>
-      <li><a href="https://www.instagram.com/merelyoneguy/">Instagram</a></li>
-    </ul>
+<main>
+  <div class="about">
+    <img class="avatar" src="/assets/avatar.jpg">
+    <p>Hi! I am Tim, an iOS developer currently living in Turkey. 👋</p>
+    <p>My favorite thing in the development process is making pixel-perfect apps and designing great APIs. I am 23 years old, and I’ve been working since I was 15. I've had great pleasure working on these <a href="/assets/CV-Tim-Pyshnov.pdf" target="_blank">projects</a>.</p>
   </div>
-
-  <div class="info-block">
-  <h1 class="page-heading">Что я пишу?</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-  </div>
-
-</div>
+</main>

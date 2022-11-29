@@ -1,66 +1,38 @@
-a {
-	color: #ffa600;
-	text-decoration: none;
-	border-bottom: 1px solid #ffa600;
+.container {
+	max-width: 700px;
+	margin: auto;
+	padding: 20px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, Arial, Arial, Helvetica, sans-serif;
+	line-height: 1.65;
+	font-size: 1.1em;
+	color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
-a:hover {
-	border-bottom: none;
+.about {
+	padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-p, a {
-	font-size: 18px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+.about .avatar {
+	display: block;
+	margin: auto;
+	margin-bottom: 2em;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
 }
 
 p {
-	color: #222;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-h1 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 30px;
-	color: #111111;
-}
-
-.container {
-	margin-left: 40px;
-	margin-top: 80px;
-	margin-bottom: 40px;
-	max-width: 640px;
-	width: 80%;
-}
-
-@media screen and (max-width: 990px) {
-    .container {
-    	margin-top: 40px;
-        margin-left: 20px;
-    }
-}
-
-.home .links {
-	margin-top: 20px;
-}
-
-.home .info-block {
-	margin-bottom: 80px;
-}
-
-.home ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.home .links li {
-	display: inline-block;
-}
-
-.home .links li a {
-	font-size: 16px;
-}
-
-.home .post-list li {
-	margin-bottom: 6px;
-	font-weight: normal;
+a {
+	color: #007aff;
+    text-decoration: none;
 }
