@@ -1,9 +1,10 @@
 .container {
-	max-width: 700px;
+	max-width: 412px;
 	margin: auto;
 	padding: 20px;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, Arial, Arial, Helvetica, sans-serif;
-	line-height: 1.65;
+	font-family: "Roboto Mono", Roboto, Helvetica, sans-serif;
+	text-align: justify;
+	line-height: 1.5;
 	font-size: 1.1em;
 	color: var(--text-color);
     -webkit-font-smoothing: antialiased;
@@ -24,10 +25,21 @@
 	border-radius: 50%;
 }
 
+.intro {
+	/* /* margin-block-start: 0em; */
+	/* font-family: "Helvetica Neue"; */
+	/* font-size: 1.4em; */
+	/* text-align: left; */
+	/* font-weight: 800; */
+	/* line-height: 1.1em; */ */
+	/* letter-spacing: -2px; */
+}
+
 p {
 	display: block;
+	/* margin: 10px; */
     margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
