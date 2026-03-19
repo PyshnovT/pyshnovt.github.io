@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Things I Would Do in My First Month at Pure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Newsreader:ital,opsz,wght@1,6..72,200..800&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Reset (minireset) */
+    blockquote,
+    body,
+    dd,
+    dl,
+    dt,
+    fieldset,
+    figure,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    html,
+    iframe,
+    legend,
+    li,
+    ol,
+    p,
+    pre,
+    textarea,
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 100%;
+      font-weight: 400;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button,
+    input,
+    select {
+      margin: 0;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    :after,
+    :before {
+      box-sizing: inherit;
+    }
+
+    img,
+    video {
+      height: auto;
+      max-width: 100%;
+    }
+
+    /* Root variables */
+    :root {
+      --font-primary: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-secondary: "Newsreader", Georgia, serif;
+      --font-code: "SF Mono", "SFMono-Regular", "Consolas", "Liberation Mono", Menlo, Courier, monospace;
+      --body-color: #111;
+      --body-bg: #fdfdfc;
+      --heading-color: #111;
+      --selection-color: #111;
+      --selection-bg: #ededed;
+    }
+
+    ::selection {
+      color: var(--selection-color);
+      background: var(--selection-bg);
+    }
+
+    ::-moz-selection {
+      color: var(--selection-color);
+      background: var(--selection-bg);
+    }
+
+    html {
+      background: var(--body-bg);
+      color: var(--body-color);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-size: 16px;
+      font-family: var(--font-primary);
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      text-size-adjust: none;
+      min-height: 100%;
+      overflow-y: scroll;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Page container */
+    .page-container {
+      padding: 5rem 1rem 2.5rem;
+      max-width: 36.375rem;
+      margin: 0 auto;
+    }
+
+    .page-container::before {
+      content: "";
+      pointer-events: none;
+      z-index: 9;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 8rem;
+      background: linear-gradient(180deg, #fdfdfc 0%, rgba(253, 253, 252, 0.738) 19%, rgba(253, 253, 252, 0.541) 34%, rgba(253, 253, 252, 0.382) 47%, rgba(253, 253, 252, 0.278) 56.5%, rgba(253, 253, 252, 0.194) 65%, rgba(253, 253, 252, 0.126) 73%, rgba(253, 253, 252, 0.075) 80.2%, rgba(253, 253, 252, 0.042) 86.1%, rgba(253, 253, 252, 0.021) 91%, rgba(253, 253, 252, 0.008) 95.2%, rgba(253, 253, 252, 0.002) 98.2%, rgba(253, 253, 252, 0));
+    }
+
+    @media screen and (max-width: 768px) {
+      .page-container {
+        padding: 2rem 1.5rem 2.5rem;
+      }
+
+      .page-container::before {
+        height: 2.5rem;
+      }
+    }
+
+    /* Article */
+    .article {
+      max-width: 70ch;
+    }
+
+    /* Header */
+    .article>header {
+      display: flex;
+      flex-direction: column;
+      gap: .25rem;
+      padding: 0 0 .5rem;
+    }
+
+    .article>header h1 {
+      color: #111;
+      font-weight: 500;
+      font-size: .875rem;
+      line-height: 1.25rem;
+      letter-spacing: -.00563rem;
+      display: flex;
+    }
+
+    .article>header time {
+      color: rgba(0, 0, 0, 0.4);
+      font-weight: 460;
+      font-size: .875rem;
+      line-height: 1.25rem;
+      letter-spacing: -.00563rem;
+    }
+
+    /* Body text */
+    .article>p {
+      padding-top: 1rem;
+    }
+
+    .article p,
+    .article li {
+      font-size: .875rem;
+      font-weight: 460;
+      line-height: 1.25rem;
+      letter-spacing: -.00563rem;
+    }
+
+    .article p strong {
+      font-weight: 600;
+    }
+
+    /* Headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--heading-color);
+      position: relative;
+      display: flex;
+    }
+
+    .article h1 {
+      font-size: .9375rem;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -.00813rem;
+      text-wrap: balance;
+    }
+
+    .article h2 {
+      font-size: .875rem;
+      font-weight: 560;
+      line-height: 1.25rem;
+      letter-spacing: -.00563rem;
+      text-wrap: balance;
+    }
+
+    .article>p+h2 {
+      padding-top: 2.25rem;
+    }
+
+    /* Section dividers */
+    .section-divider {
+      position: relative;
+      padding: 2.25rem 0 0;
+    }
+
+    .section-divider hr {
+      border: none;
+      height: 1px;
+      background: #ededed;
+    }
+
+    .section-divider .heading-wrap {
+      padding-top: 2.25rem;
+    }
+
+    .section-divider .heading-wrap h1 {
+      font-size: .9375rem;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -.00813rem;
+    }
+
+    /* Links */
+    .basic-link {
+      position: relative;
+      display: inline;
+      color: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      transition: all .2s ease;
+    }
+
+    .basic-link::before {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      border-radius: 2px;
+      background: #d9d9d9;
+      opacity: 1;
+      transition: inherit;
+    }
+
+    .basic-link:hover::before {
+      background: #666;
+    }
+
+    /* Emphasis */
+    .article em {
+      color: #000;
+      font-family: var(--font-secondary);
+      font-size: .9375rem;
+      font-style: italic;
+      font-weight: 430;
+      letter-spacing: .01rem;
+      font-variation-settings: "opsz" 10;
+    }
+
+    /* Code */
+    code,
+    pre {
+      font-family: var(--font-code);
+    }
+
+    code {
+      position: relative;
+      display: inline-block;
+      font-size: .9em;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.75);
+      padding: .1rem .2rem;
+    }
+
+    code::before {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      transform: translateY(-1px);
+      inset: -.1em 0;
+      border-radius: .25rem;
+      background: rgba(0, 0, 0, 0.04);
+    }
+
+    /* Sup */
+    .article sup {
+      display: inline-block;
+      padding: 0 0 0 .35em;
+      color: hsla(0, 0%, 7%, 0.5);
+      font-size: .6em;
+      font-weight: 460;
+      line-height: 1;
+      letter-spacing: -.00563rem;
+    }
+
+    .article sup a::before {
+      display: none;
+    }
+
+    .article sup a:hover {
+      color: #000;
+    }
+
+    /* Blockquote */
+    .article blockquote {
+      font-size: .8125rem;
+      font-style: italic;
+      font-weight: 460;
+      line-height: 140%;
+      letter-spacing: -.0025rem;
+      padding: 2rem 0;
+      color: hsla(0, 0%, 7%, 0.6);
+    }
+
+    .article blockquote p {
+      display: block;
+      position: relative;
+      padding: 0 0 0 1rem;
+    }
+
+    .article blockquote p::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: .125rem;
+      border-radius: .3125rem;
+      background: #e6e6e6;
+    }
+
+    /* Lists */
+    .article>ul {
+      list-style: none;
+      display: block;
+      position: relative;
+      padding: .5rem 0 1rem 1.25rem;
+    }
+
+    .article>ul li {
+      position: relative;
+      padding: 0 0 .5rem .75rem;
+    }
+
+    .article>ul li:last-child {
+      padding-bottom: 0;
+    }
+
+    .article>ul li::before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: .675em;
+      width: .25rem;
+      height: .25rem;
+      border-radius: 50%;
+      background: #b3b3b3;
+    }
+
+    /* Footer */
+    .article>footer {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 3rem 0 0;
+    }
+
+    .article>footer h1,
+    .article>footer p {
+      color: rgba(0, 0, 0, 0.4);
+      font-size: .75rem;
+      font-weight: 460;
+      letter-spacing: .00063rem;
+      line-height: 1.2;
+    }
+
+    .article>footer .basic-link {
+      color: rgba(0, 0, 0, 0.65);
+    }
+
+    .article>footer .basic-link:hover {
+      color: #111;
+    }
+
+    /* Footnotes */
+    .footnotes {
+      padding: 2.5rem 0 0;
+    }
+
+    .footnotes::before {
+      content: "";
+      display: block;
+      width: 3.125rem;
+      height: 1px;
+      background: #ededed;
+    }
+
+    .footnotes h2 {
+      color: rgba(0, 0, 0, 0.4);
+      font-size: .6875rem;
+      font-weight: 460;
+      letter-spacing: .00063rem;
+      text-transform: uppercase;
+    }
+
+    .footnotes ol {
+      list-style: none;
+      display: block;
+      position: relative;
+      padding: 3rem 0 0 .25rem;
+    }
+
+    .footnotes ol li {
+      position: relative;
+      counter-increment: list;
+      color: rgba(0, 0, 0, 0.4);
+      font-size: .75rem;
+      font-weight: 460;
+      letter-spacing: .00063rem;
+      line-height: 1.2;
+      padding: 0 0 .5625rem .25rem;
+    }
+
+    .footnotes ol li::before {
+      position: absolute;
+      right: 100%;
+      top: 0;
+      content: counter(list);
+      font-size: .45rem;
+      font-weight: 460;
+      letter-spacing: .00063rem;
+    }
+
+    .footnotes ol li p {
+      font-size: inherit;
+      font-weight: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+    }
+
+    .footnotes .basic-link {
+      color: rgba(0, 0, 0, 0.65);
+    }
+
+    .footnotes .basic-link:hover {
+      color: #111;
+    }
+
+    .data-footnote-backref {
+      z-index: 1;
+      position: absolute;
+      inset: 0;
+      bottom: .5em;
+      overflow: hidden;
+      display: inline-block;
+      text-indent: -9999px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+    <main>
+      <article class="article">
+        <header>
+          <h1 id="pure-pitch">Things I Would Do in My First Month at Pure</h1>
+          <time>March 2026</time>
+        </header>
+        <div class="section-divider">
+          <hr>
+          <div class="heading-wrap">
+            <h1 id="map-the-money-moments">Find the friction</h1>
+          </div>
+        </div>
+
+        <p>I would map the entire journey from install to paywall and to consumables. I would want to see every single
+          screen
+          where we have money talk and analyze where it is possible to reduce friction.
+          And inversely, where the user feels the pull and has an emotional moment but we don't capitalize on that.
+          Then I would do the same for other dating apps and collect mechanics that we may underutilize.</p>
+
+        <div class="section-divider">
+          <hr>
+          <div class="heading-wrap">
+            <h1 id="make-it-personal">Software should feel more personal</h1>
+          </div>
+        </div>
+
+        <p>I would look at daily actions of users who churn, find common patterns (seeing fewer than 20 total ads in the
+          feed),
+          and right when they thought they were out, I'd pull them back in. Some ideas how:
+          extend subscriptions of people who certainly look like they'd cancel — or already did.
+          Give them a second chance and notify them when someone creates a new post.</p>
+        <p>I would analyze the whole notification system and build honest, contextual notifications.
+          For example, I would find high-activity windows in their specific location and
+          send "Your area is 4× more active than usual right now" at 11pm on a Friday. Which goes to number 3.
+        </p>
+
+        <div class="section-divider">
+          <hr>
+          <div class="heading-wrap">
+            <h1 id="small-area-problem">Solve the small-area problem</h1>
+          </div>
+        </div>
+
+        <p>The most common critique of Pure online is the absence of users in smaller areas.
+          We might consider a pricing policy similar to Uber where we change price depending
+          on demand in the area the user is from. Decreasing price in some local areas might
+          fill in the feed.</p>
+        <p>I would want to see something like a heat map of user activity —
+          see at what time they use the app, see the patterns. Users simply might miss each other in small areas.
+          I would frame it as a math problem where we connect two people who otherwise would have missed each other.
+          Sometimes it is just a perfectly timed notification.</p>
+
+        <div class="section-divider">
+          <hr>
+          <div class="heading-wrap">
+            <h1 id="subscription-engine">Make iteration fast</h1>
+          </div>
+        </div>
+
+        <p>Pure is likely to have a subscription engine / CRM. Being inspired by an engineer from Anthropic who
+          automated ads,
+          I would want to reduce any friction so we could iterate on paywalls and subscriptions within days or weeks.
+          Easily do A/B/C tests and get results ASAP. Unless we already have the best system in the world for that.</p>
+
+        <div class="section-divider">
+          <hr>
+          <div class="heading-wrap">
+            <h1 id="right-paywall">The right paywall at the right time</h1>
+          </div>
+        </div>
+
+        <p>On the client side, I would want to have the ability to trigger paywalls
+          on specific actions and trigger a specific paywall variant depending on the user's experience in the app.</p>
+      </article>
+    </main>
+  </div>
+</body>
+
+</html>
